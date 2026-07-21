@@ -14,16 +14,15 @@ services:
       - ./nginx/certbot/conf:/etc/letsencrypt
     networks:
       - infra-net
-
-  portainer:
-    image: portainer/portainer-ce:2.20.3
-    container_name: infra-portainer
-    restart: unless-stopped
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./portainer_data:/data
-    networks:
-      - infra-net
+  # portainer:
+  #   image: portainer/portainer-ce:2.20.3
+  #   container_name: infra-portainer
+  #   restart: unless-stopped
+  #   volumes:
+  #     - /var/run/docker.sock:/var/run/docker.sock:ro
+  #     - ./portainer_data:/data
+  #   networks:
+  #     - infra-net
 
 networks:
   infra-net:
