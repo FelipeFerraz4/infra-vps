@@ -9,7 +9,9 @@ nginx/certbot/live/
 nginx/certbot/archive/
 nginx/certbot/renewal/
 nginx/certbot/conf/
+nginx/certbot/www/
 *.pem
+
 
 # Environment files
 /.env
